@@ -5,7 +5,7 @@ corona_data <- get_data_by_country("Italy")
 corona_data <- corona_data[order(as.Date(corona_data$reportDate, format="%Y-%m-%d")),]
 
 y <- as.vector(as.numeric(as.character(corona_data$cases)))
-x <- seq(1,length(y))
+x <- seq(1, length(y))
 
 plot(x, y)
 
@@ -17,5 +17,7 @@ K <- (1 / summary(log.ss)$coef[3])
 
 xx <- seq(1, 2*length(y))
 
+data.frame()
 plot(y ~ x, main = "Logistic Function", xlab = xx)
-lines(0:max(xx), predict(log.ss, data.frame(x=0:max(xx))), col="red")
+
+plot(0:max(xx), predict(log.ss, data.frame(x = 0:max(xx))), col="red")
