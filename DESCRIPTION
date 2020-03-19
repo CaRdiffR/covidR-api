@@ -1,0 +1,16 @@
+Package: covidR
+Title: R API for COVID-19 data
+Version: 0.0.1
+Authors@R: c(person("Dominik", "Krzemiński", email = "raymon92@gmail.com", role = "cre"))
+Description: Provides a simple R API wrapper Covid-19 data handler.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: 
+    R (>= 3.5.1)
+Imports:
+    httr,
+    jsonlite,
+    readr,
+    glue
