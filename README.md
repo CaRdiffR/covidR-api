@@ -43,6 +43,16 @@ There's also more general function that accepts more flexible syntax:
 > covid_api_request("?country=Spain")
 ```
 
+## Important
+
+The data comes straight from database, so it's not cleaned. Eg. dates are not in a date format. To see how to get started with processing the data visit `examples/` folder.
+
+## Examples
+
+This is an example plot with ARIMA fit to logarithm of number of cases for 6 different countries.
+
+![ARIMA fit](examples/plotARIMAfit.png)
+
 ## More
 
 Data comes from this API https://github.com/GregVes/covid-19-api-server
